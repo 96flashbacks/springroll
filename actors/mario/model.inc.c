@@ -23,7 +23,7 @@
 #define		G_CC_MARIO_MAPPING		TEXEL0, SHADE, TEXEL0_ALPHA, SHADE,  0,0,0,ENVIRONMENT
 #define		G_CC_MARIO_NORMAL			 0,		 0,			  0, SHADE,  0,0,0,ENVIRONMENT
 
-#define	SCALE	3.5
+#define	SCALE	4
 #define ShapeColor_mario(R,G,B) {{R/SCALE ,G/SCALE ,B/SCALE ,0 ,R/SCALE ,G/SCALE ,B/SCALE ,0 },{ R, G, B, 0, R, G, B, 0, LIGHT_X, LIGHT_Y, LIGHT_Z, 0}}
 
 
