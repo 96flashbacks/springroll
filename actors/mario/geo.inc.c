@@ -106,7 +106,7 @@ const GeoLayout mario_geo_body[] = {
         GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, mario_butt), // starts sharing solid color with mario_torso (blue)
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_OPAQUE, 68, 0, 0, mario_torso),
@@ -223,7 +223,7 @@ const GeoLayout mario_geo_medium_poly_body[] = {
         GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, mario_medium_poly_butt), // starts sharing solid color with mario_torso (blue)
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_OPAQUE, 68, 0, 0, mario_medium_poly_torso),
@@ -390,7 +390,7 @@ const GeoLayout mario_geo_low_poly_body[] = {
         GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, mario_low_poly_butt), // starts sharing solid color with mario_torso (blue)
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_OPAQUE, 68, 0, 0, mario_low_poly_torso),
@@ -561,7 +561,7 @@ const GeoLayout mario_vanish_geo_body[] = {
         GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, mario_butt),
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_TRANSPARENT, 68, 0, 0, mario_torso),
@@ -678,7 +678,7 @@ const GeoLayout mario_vanish_geo_medium_poly_body[] = {
         GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, mario_medium_poly_butt),
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_TRANSPARENT, 68, 0, 0, mario_medium_poly_torso),
@@ -845,7 +845,7 @@ const GeoLayout mario_vanish_geo_low_poly_body[] = {
         GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, mario_low_poly_butt),
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_TRANSPARENT, 68, 0, 0, mario_low_poly_torso),
@@ -996,7 +996,7 @@ const GeoLayout mario_metal_geo_body[] = {
         GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, mario_metal_butt), // starts sharing metal texture with the dls below
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_OPAQUE, 68, 0, 0, mario_metal_torso_shared_dl),
@@ -1113,7 +1113,7 @@ const GeoLayout mario_metal_geo_medium_poly_body[] = {
         GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, mario_metal_medium_poly_butt),
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_OPAQUE, 68, 0, 0, mario_metal_medium_poly_torso),
@@ -1260,7 +1260,7 @@ const GeoLayout mario_metal_geo_low_poly_body[] = {
         GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, mario_metal_low_poly_butt),
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_OPAQUE, 68, 0, 0, mario_metal_low_poly_torso),
@@ -1411,7 +1411,7 @@ const GeoLayout mario_metal_vanish_geo_body[] = {
         GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, mario_metal_butt),
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_TRANSPARENT, 68, 0, 0, mario_metal_torso_shared_dl),
@@ -1528,7 +1528,7 @@ const GeoLayout mario_metal_vanish_geo_medium_poly_body[] = {
         GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, mario_metal_medium_poly_butt),
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_TRANSPARENT, 68, 0, 0, mario_metal_medium_poly_torso),
@@ -1678,7 +1678,7 @@ const GeoLayout mario_metal_vanish_geo_low_poly_body[] = {
         GEO_ANIMATED_PART(LAYER_TRANSPARENT, 0, 0, 0, mario_metal_low_poly_butt),
         GEO_OPEN_NODE(),
             GEO_ASM(0, geo_move_mario_part_from_parent),
-            GEO_ASM(0, geo_mario_tilt_torso),
+            
             GEO_ROTATION_NODE(0x00, 0, 0, 0),
             GEO_OPEN_NODE(),
                 GEO_ANIMATED_PART(LAYER_TRANSPARENT, 68, 0, 0, mario_metal_low_poly_torso),

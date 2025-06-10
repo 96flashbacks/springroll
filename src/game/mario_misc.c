@@ -376,28 +376,6 @@ Gfx *geo_switch_mario_eyes(s32 callContext, struct GraphNode *node, UNUSED Mat4 
 }
 
 /**
- * Makes Mario's upper body tilt depending on the rotation stored in his bodyState
- */
-Gfx *geo_mario_tilt_torso(s32 callContext, struct GraphNode *node, UNUSED Mat4 *c) {
-    struct GraphNodeGenerated *asGenerated = (struct GraphNodeGenerated *) node;
-    struct MarioBodyState *bodyState = &gBodyStates[asGenerated->parameter];
-    s32 action = bodyState->action;
-
-    if (callContext == GEO_CONTEXT_RENDER) {
-        struct GraphNodeRotation *rotNode = (struct GraphNodeRotation *) node->next;
-
-        if (action != ACT_BUTT_SLIDE && action != ACT_HOLD_BUTT_SLIDE && action != ACT_WALKING
-            && action != ACT_RIDING_SHELL_GROUND) {
-            vec3s_copy(bodyState->torsoAngle, gVec3sZero);
-        }
-        rotNode->rotation[0] = bodyState->torsoAngle[1];
-        rotNode->rotation[1] = bodyState->torsoAngle[2];
-        rotNode->rotation[2] = bodyState->torsoAngle[0];
-    }
-    return NULL;
-}
-
-/**
  * Makes Mario's head rotate with the camera angle when in C-up mode
  */
 Gfx *geo_mario_head_rotation(s32 callContext, struct GraphNode *node, UNUSED Mat4 *c) {
