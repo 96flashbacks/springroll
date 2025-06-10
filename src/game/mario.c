@@ -1008,6 +1008,7 @@ u32 set_mario_action(struct MarioState *m, u32 action, u32 actionArg) {
     m->actionArg = actionArg;
     m->actionState = 0;
     m->actionTimer = 0;
+    m->isPushing = 0;
 
     return TRUE;
 }
