@@ -6618,20 +6618,6 @@ s16 camera_course_processing(struct Camera *c) {
                 set_mode_if_not_set_by_surface(c, CAMERA_MODE_OUTWARD_RADIAL);
                 break;
 
-            case AREA_BOB:
-                if (set_mode_if_not_set_by_surface(c, CAMERA_MODE_NONE) == 0) {
-                    if (sMarioGeometry.currFloorType == SURFACE_BOSS_FIGHT_CAMERA) {
-                        set_camera_mode_boss_fight(c);
-                    } else {
-                        if (c->mode == CAMERA_MODE_CLOSE) {
-                            transition_to_camera_mode(c, CAMERA_MODE_RADIAL, 60);
-                        } else {
-                            set_camera_mode_radial(c, 60);
-                        }
-                    }
-                }
-                break;
-
             case AREA_WDW_MAIN:
                 switch (sMarioGeometry.currFloorType) {
                     case SURFACE_INSTANT_WARP_1B:
@@ -9068,8 +9054,8 @@ BAD_RETURN(s32) cutscene_read_message(struct Camera *c) {
             break;
         // Leave the dialog.
         case 1:
-            move_mario_head_c_up(c);
-            update_c_up(c, c->focus, c->pos);
+            unused_cam_to_mario(c);
+            //update_c_up(c, c->focus, c->pos);
 
             // This could cause softlocks. If a message starts one frame after another one closes, the
             // cutscene will never end.
