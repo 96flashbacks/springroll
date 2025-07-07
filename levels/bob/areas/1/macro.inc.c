@@ -8,7 +8,7 @@ const MacroObject bob_seg7_macro_objs[] = {
     MACRO_OBJECT_WITH_BHV_PARAM(/*preset*/ macro_water_bomb_spawner,        /*yaw*/   0, /*pos*/  3620,  4000,  4800, /*behParam*/ 15),
     MACRO_OBJECT_WITH_BHV_PARAM(/*preset*/ macro_water_bomb_spawner,        /*yaw*/   0, /*pos*/ -5141,  3764,  -743, /*behParam*/ 25),
     MACRO_OBJECT_WITH_BHV_PARAM(/*preset*/ macro_water_bomb_spawner,        /*yaw*/   0, /*pos*/ -4208,  3769, -2036, /*behParam*/ 10),
-    MACRO_OBJECT_WITH_BHV_PARAM(/*preset*/ macro_cannon_open,             /*yaw*/   0, /*pos*/ -5018,  1332, -3533, /*behParam*/ 0x00),
+    MACRO_OBJECT_WITH_BHV_PARAM(/*preset*/ macro_cannon_open,             /*yaw*/   0, /*pos*/ -5018,  1076, -3533, /*behParam*/ 0x00),
     MACRO_OBJECT_WITH_BHV_PARAM(/*preset*/ macro_cannon_open,             /*yaw*/   0, /*pos*/  6349,  2080, -7066, /*behParam*/ 0xC0),
     MACRO_OBJECT(/*preset*/ macro_water_bomb_cannon_2,         /*yaw*/   0, /*pos*/  4243,  3071, -2451),
     MACRO_OBJECT_WITH_BHV_PARAM(/*preset*/ macro_wooden_signpost,           /*yaw*/ 270, /*pos*/    66,     0,  6977, /*behParam*/ DIALOG_113),
