@@ -145,10 +145,8 @@ void slide_bonk(struct MarioState *m, u32 fastAction, u32 slowAction) {
 }
 
 s32 set_triple_jump_action(struct MarioState *m, UNUSED u32 action, UNUSED u32 actionArg) {
-    if (m->flags & MARIO_WING_CAP) {
-        return set_mario_action(m, ACT_FLYING_TRIPLE_JUMP, 0);
-    } else if (m->forwardVel > 20.0f) {
-        return set_mario_action(m, ACT_TRIPLE_JUMP, 0);
+    if (m->forwardVel > 20.0f) { /* why does this need to be its own function, nintendo? */
+        return set_mario_action(m, ACT_TWIRLING, 0);
     } else {
         return set_mario_action(m, ACT_JUMP, 0);
     }

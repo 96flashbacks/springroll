@@ -793,8 +793,8 @@ static u32 set_mario_action_airborne(struct MarioState *m, u32 action, u32 actio
             set_mario_y_vel_based_on_fspeed(m, 62.0f, 0.0f);
             break;
 
-        case ACT_TRIPLE_JUMP:
-            set_mario_y_vel_based_on_fspeed(m, 69.0f, 0.0f);
+        case ACT_TWIRLING:
+            set_mario_y_vel_based_on_fspeed(m, 65.0f, 0.25f);
             m->forwardVel *= 0.8f;
             break;
 
@@ -1311,11 +1311,7 @@ void update_mario_joystick_inputs(struct MarioState *m) {
     struct Controller *controller = m->controller;
     f32 mag = ((controller->stickMag / 64.0f) * (controller->stickMag / 64.0f)) * 64.0f;
 
-    if (m->squishTimer == 0) {
-        m->intendedMag = mag / 2.0f;
-    } else {
-        m->intendedMag = mag / 8.0f;
-    }
+    m->intendedMag = mag / 2.0f;
 
     if (m->intendedMag > 0.0f) {
         m->intendedYaw = atan2s(-controller->stickY, controller->stickX) + m->area->camera->yaw;
