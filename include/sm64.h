@@ -432,4 +432,17 @@
 
 #define C_BUTTONS     (U_CBUTTONS | D_CBUTTONS | L_CBUTTONS | R_CBUTTONS   )
 
+// Just put the 'missing braces' warning silencer here
+#pragma GCC diagnostic ignored "-Wmissing-braces"
+
+// Best spot (in my opinion) for these two files
+#include "gex.h"
+//#include "convert_hms_to_geo_layouts.h"
+
+// Putting these here
+#define LIGHT_X 40
+#define LIGHT_Y 40
+#define LIGHT_Z 40
+#define ShapeColor(R,G,B) gdSPDefLights1(R/4,G/4,B/4,R,G,B,40,40,40)
+
 #endif // SM64_H
