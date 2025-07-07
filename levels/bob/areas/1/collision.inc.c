@@ -1096,5 +1096,17 @@ const Collision bobo_collision[] = {
 	COL_TRI(252, 392, 394),
 	COL_TRI(252, 394, 250),
 	COL_TRI_STOP(),
+    COL_SPECIAL_INIT(11),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/ -5792, 1024, -4654),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/ -4607, 1024,  3575),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/ -5631, 1024,  2300),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/  5444,  863,  6016),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/ -6655, 1024,  3584),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/ -6130,  900, -6507),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/ -4126, 1024,  1125),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/ -4095, 1024,  2762),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/ -6172, 1024,  -430),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/  -283, 4136,  336),
+    SPECIAL_OBJECT(/*preset*/ special_bubble_tree, /*pos*/  6799, 2008, -5587),
 	COL_END()
 };
