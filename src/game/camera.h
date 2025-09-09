@@ -205,7 +205,7 @@
 #define CUTSCENE_DOOR_WARP            139
 #define CUTSCENE_DOOR_PULL_MODE       140
 #define CUTSCENE_DOOR_PUSH_MODE       141
-#define CUTSCENE_INTRO_PEACH          142
+#define CUTSCENE_INTRO                142
 #define CUTSCENE_DANCE_ROTATE         143
 #define CUTSCENE_ENTER_BOWSER_ARENA   144
 #define CUTSCENE_0F_UNUSED            145 // Never activated, stub cutscene functions
@@ -718,7 +718,6 @@ void shake_camera_roll(s16 *roll);
 s32 offset_yaw_outward_radial(struct Camera *c, s16 areaYaw);
 void play_camera_buzz_if_cdown(void);
 void play_camera_buzz_if_cbutton(void);
-void play_camera_buzz_if_c_sideways(void);
 void play_sound_cbutton_up(void);
 void play_sound_cbutton_down(void);
 void play_sound_cbutton_side(void);
