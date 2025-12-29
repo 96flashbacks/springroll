@@ -1,3 +1,3 @@
 # springroll
 
-A SM64 Hack inspired by the Space World 1995 B-Roll. Heavy WIP.
+This repository is obsolete. Check https://github.com/96flashbacks/backstage instead
